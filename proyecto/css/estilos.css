@@ -1,0 +1,135 @@
+body{
+  font-family: helvetica;
+  font-style: italic;
+  background-color: black;
+}
+header{
+  background-color: #5b7989;
+  width: 100%;
+  display: flex;
+  text-shadow: 2px 2px #02010A;
+  border-radius: 10px 10px 0 0;
+  flex-flow: row wrap;
+}
+#titulo{
+  width: 70%;
+  text-indent:  15px;
+}
+#titulo>h1{
+  color: white;
+}
+#menu{
+  word-spacing: 18px;
+  padding-top: 25px;
+  text-align: center;
+  width: 30%;
+  font-size: 27px;
+}
+a{
+  color: white;
+}
+.index{
+  text-decoration: none;
+}
+#central{
+  width: 100%;
+  text-align: center;
+  background-color: #82C3A6;
+  position: static;
+}
+#central img{
+  margin: 50px;
+  width: 600px;
+  text-align: center;
+  box-shadow: 3px 3px black;
+}
+#secundarias{
+  box-sizing: content-box;
+  width: 100%;
+  display: flex;
+  background-color: #d5c75f;
+  display: -webkit-flex;
+  border:1px;
+}
+.secundaria1,.secundaria2{
+  margin: 50px;
+  width: 50%;
+  text-align: center;
+}
+.secundaria1>a>img,.secundaria2>a>img{
+  height: 250px;
+  border: 1px solid black;
+  box-shadow: 2px 2px #82c3a6;
+}
+.secundaria1>a>img:hover{
+  transform: rotate(10deg);
+  transition: rotate, 0.75s;
+}
+.secundaria2>a>img:hover{
+  transform: translate3d(20px, -5px, 0);
+  transition: translate3d, 0.75s;
+}
+footer{
+  width: 100%;
+  display: flex;
+  border-radius: 0 0 10px 10px;
+  flex-flow: row;
+  background-color: #c6d5c5;
+  position: static;
+}
+.contacto,.terminos,.redes,.derechos{
+  margin: 25px;
+  width: 25%;
+}
+.contacto>h1,.terminos>h1,.redes>h1,.derechos>h1{
+  text-shadow: 2px 2px white;
+}
+.contacto>p>a{
+  color: black;
+}
+.contacto>p,.terminos>p,.redes>p,.derechos>p{
+  margin-top: -10px;
+  font-size: 20px;
+  color: black;
+  text-shadow: 1px 1px white;
+}
+.logo_facebook,.logo_twitter,.logo_instagram{
+  width: 20px;
+}
+@media (max-width: 600px) {
+  #titulo{
+		width: 100%;
+		order: 1;
+    text-align: center;
+	}
+	#menu{
+		width: 100%;
+		order: 2;
+    padding-bottom: 25px; text-align: center;
+	}
+  #central img{
+    text-align: center;
+    height: 240px;
+    width: auto;
+  }
+  #secundarias{
+    flex-flow: column;
+  }
+  .secundaria1 img{
+    text-align: center;
+    height: 240px;
+    width: 370px;
+  }
+  .secundaria2 img{
+    text-align: center;
+    height: 240px;
+    width: 370px;
+  }
+  footer{
+    flex-flow: column;
+  }
+  .contacto,.terminos,.redes,.derechos{
+    padding-left: 50px;
+    text-align: left;
+  }
+}
